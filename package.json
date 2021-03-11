@@ -1,0 +1,12 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "This is the discord bot for Code Together Discord server. Currently in Development.",
+  "main": "server.js",
+  "author": "\"Sobhan Bera\"",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
