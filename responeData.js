@@ -31,7 +31,7 @@ const mainResponse = {
 	message:
 		"This server is not for commercial use, and should be in only discord server created by the developer. Any Person, Programmer, Developer is not allowed to fetch this server's data without the permissions of developer of this server.",
 	developer: 'Sobhan Bera',
-	github: 'https://github.com/sobhanbera/discordbot',
+	github: 'https://github.com/sobhanbera/discord',
 	developerProfile: 'https://github.com/sobhanbera',
 	contact:
 		'If you want to contribute, or use any of the features of this server, or want template of this server, or want the JS bot related to this server please contact the developer.',
