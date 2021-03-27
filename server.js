@@ -2,6 +2,9 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 require('dotenv').config()
 
+const DISCORD_SERVER_TOKEN =
+	'ODI1MDMxNTkzMTM0NjUzNDYy.YF4AjA.ts3WOeCSer8S1jGEFJiu2eashUo'
+const KEY = 'a21f503716271dda7cf5cd685b80b1836ea820e2d180b89ed4af31e17c797e44'
 // constants
 const roleAllotmentChannelID = '823818475054563339'
 let clientIsReadyAndWorking = false
@@ -200,7 +203,7 @@ client.on('messageDelete', () => {
 	messageDeleteByUser++
 })
 
-client.login(process.env.DISCORD_SERVER_TOKEN)
+client.login(DISCORD_SERVER_TOKEN)
 
 // this is the express server so that no issues occurs on the backend side...
 const express = require('express')
@@ -210,7 +213,7 @@ const app = express()
 const PORT = process.env.PORT// only for dev purpose || 8000
 
 app.get('/', (req, res) => {
-	if (req.query.key !== process.env.KEY) {
+	if (req.query.key !== KEY) {
 		res.status(400).send(errorData.accessNotAllowed)
 	} else {
 		res.status(200).send({
