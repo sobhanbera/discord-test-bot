@@ -207,7 +207,7 @@ const express = require('express')
 const { responseData, errorData } = require('./responeData')
 
 const app = express()
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT// only for dev purpose || 8000
 
 app.get('/', (req, res) => {
 	if (req.query.key !== process.env.KEY) {
