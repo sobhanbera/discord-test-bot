@@ -12,7 +12,8 @@
 		"express": "^4.17.1"
 	},
 	"scripts": {
-		"run": "nodemon server.js"
+		"run dev": "nodemon server.js",
+        "start": "node server.js"
 	},
 	"prettier": {
 		"tabWidth": 4,
